@@ -46,7 +46,7 @@ document.addEventListener("scroll", () => {
   const scrollYPos = window.scrollY;
 
   if (scrollYPos > 50) {
-    document.getElementById("logo").style.width = "40%";
+    document.getElementById("logo").style.width = "25%";
   } else {
     document.getElementById("logo").style.width = "100%";
   }
