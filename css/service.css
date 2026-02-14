@@ -1,0 +1,25 @@
+.service-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.service-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.service-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.service-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #00000099;
+}

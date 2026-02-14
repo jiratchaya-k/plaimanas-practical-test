@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-body {
+body, p {
     margin: 0;
     padding: 0;
     font-family: "Arial", sans-serif;
@@ -16,6 +16,11 @@ body {
 
 .header-font {
     font-family: "Hanken Grotesk", sans-serif;
+}
+
+.max-width-content {
+    max-width: 1092px;
+    margin: 0 auto;
 }
 
 .header { 
@@ -259,7 +264,6 @@ section {
     font-size: 14px;
     font-weight: 400;
     color: #000000;
-    margin: 0;
 }
 
 .collection-container {
