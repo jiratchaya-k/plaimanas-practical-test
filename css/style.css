@@ -376,3 +376,37 @@ section {
 .collection-image .collection-text {
     font-size: 40px;
 }
+
+.scrolling-text-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.scrolling-text-wrapper {
+  position: relative;
+  white-space: nowrap;
+  will-change: transform;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 95px;
+}
+.scrolling-text-item {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 900;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+.scrolling-text-item.arrow-right {
+    transform: rotate(180deg);
+}
+
+.scrolling-text-item.arrow-right:last-child {
+    padding-left: 95px;
+}
