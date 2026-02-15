@@ -1,235 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plaimanas Practical Test By Jiratchaya Kongmaung</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Plaimanas Practical Test By Jiratchaya Kongmaung</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/service.css">
+		<link rel="stylesheet" href="css/faq.css">
+		<link rel="stylesheet" href="css/inquiry.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+		<script src="js/main.js" defer></script>
+		<script src="js/auto-scrolling.js" defer></script>
+		<script src="js/tab.js" defer></script>
+		<script src="js/accordion.js" defer></script>
+		<script src="js/inquiry-form.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<div id="language">
+				<button class="lang-btn">TH - THB <span class="arrow"></span></button>
+				<div id="lang-option" class="lang-option">
+					<button class="lang-select">US - USD</button>
+				</div>
+			</div>
+			<div class="menu">
+				<a href="#women" class="menu-item menu-btn">WOMEN</a>
+				<a href="#collection" class="menu-item menu-btn">COLLECTIONS</a>
+				<a href="#editorial" id="editorial-menu" class="menu-item menu-btn">EDITORIAL</a>
+				<a href="#news" class="menu-item menu-btn">NEWS</a>
+				<a href="#stories" class="menu-item menu-btn">STORIES</a>
+			</div>
+			<div class="right-content">
+				<a href="#sign-in" class="menu-item sign-in-btn">SIGN IN</a>
+				<a href="#cart" class="menu-item"><img src="/images/shopping-bag.svg" alt="shopping bag"/></a>
+			</div>
+		</header>
+		<div class="editorial-dropdown-container">
+			<div id="editorial-dropdown" class="editorial-dropdown">
+				<span class="editorial-title">EDITORIAL</span>
+				<div class="editorial-sub-menu-container">
+					<a href="#asc" class="editorial-sub-menu">A.S.C</a>
+					<a href="#bazaar" class="editorial-sub-menu">BAZAAR</a>
+					<a href="#elle" class="editorial-sub-menu">ELLE</a>
+					<a href="#gq" class="editorial-sub-menu">GQ</a>
+				</div>
+			</div>
+		</div>
+		<img id="logo" class="header-font logo" src="/images/logo.png" alt="Plaimanas Logo">
+		<main>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/service.css">
-    <link rel="stylesheet" href="css/faq.css">
+			<!-- HERO BANNER -->
+			<section class="hero-banner">
+				<video autoplay muted loop>
+				<source src="videos/banner.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</section>
+            
+			<!-- NEW -->
+			<section>
+				<div class="banner-container new-banner">
+					<div class="header-font sticky-text">NEW</div>
+				</div>
+				<div class="description">
+					<span class="description-title">Sed egestas, nibh a condimentum imperdiet</span>
+					<p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+				</div>
+			</section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
-    <script src="js/main.js" defer></script>
-    <script src="js/auto-scrolling.js" defer></script>
-    <script src="js/tab.js" defer></script>
-    <script src="js/accordion.js" defer></script>
-</head>
-<body>
-    <header class="header">
-        <div id="language">
-            <button class="lang-btn">TH - THB <span class="arrow"></span></button>
-            <div id="lang-option" class="lang-option">
-                <button class="lang-select">US - USD</button>
-            </div>
-        </div>
-        <div class="menu">
-            <a href="#women" class="menu-item menu-btn">WOMEN</a>
-            <a href="#collection" class="menu-item menu-btn">COLLECTIONS</a>
-            <a href="#editorial" id="editorial-menu" class="menu-item menu-btn">EDITORIAL</a>
-            <a href="#news" class="menu-item menu-btn">NEWS</a>
-            <a href="#stories" class="menu-item menu-btn">STORIES</a>
-        </div>
-        <div class="right-content">
-            <a href="#sign-in" class="menu-item sign-in-btn">SIGN IN</a>
-            <a href="#cart" class="menu-item"><img src="/images/shopping-bag.svg" alt="shopping bag"/></a>
-        </div>
-    </header>
-    <div class="editorial-dropdown-container">
-        <div id="editorial-dropdown" class="editorial-dropdown">
-            <span class="editorial-title">EDITORIAL</span>
-            <div class="editorial-sub-menu-container">
-                <a href="#asc" class="editorial-sub-menu">A.S.C</a>
-                <a href="#bazaar" class="editorial-sub-menu">BAZAAR</a>
-                <a href="#elle" class="editorial-sub-menu">ELLE</a>
-                <a href="#gq" class="editorial-sub-menu">GQ</a>
-            </div>
-        </div>
-    </div>
-    <img id="logo" class="header-font logo" src="/images/logo.png" alt="Plaimanas Logo">
-    <main>
-        <!-- HERO BANNER -->
-        <section class="hero-banner">
-            <video autoplay muted loop>
-            <source src="videos/banner.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </section>
+			<!-- BESTSELLER -->
+			<section>
+				<div class="banner-container best-seller-banner">
+					<video autoplay muted loop>
+						<source src="videos/bestseller.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<div class="header-font sticky-text">BESTSELLER</div>
+				</div>
+				<div class="description">
+					<span class="description-title">Sed egestas, nibh a condimentum imperdiet</span>
+					<p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+				</div>
+			</section>
 
-        <!-- NEW -->
-        <section>
-            <div class="banner-container new-banner">
-                <div class="header-font sticky-text">NEW</div>
-            </div>
-            <div class="description">
-                <span class="description-title">Sed egestas, nibh a condimentum imperdiet</span>
-                <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
-            </div>
-        </section>
+			<!-- COLLECTIONS -->
+			<section>
+				<div class="collection-container">
+					<div class="collection collection-video">
+						<img src="/images/collection-01.png" alt="Collection 01 Poster">
+						<video muted loop autoplay>
+							<source src="videos/collection-01.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<span class="header-font collection-text">COLLECTION 01</span>
+					</div>
+					<div class="collection-grid">
+						<div class="collection collection-image collection-two">
+							<img class="collection-image-default" src="/images/collection-02.png" alt="Collection 02 Poster">
+							<img class="collection-image-hover" src="/images/collection-02-hover.png" alt="Collection 02 Poster">
+							<span class="header-font collection-text">COLLECTION 02</span>
+						</div>
+						<div class="collection collection-image collection-three">
+							<img class="collection-image-default" src="/images/collection-03.png" alt="Collection 02 Poster">
+							<img class="collection-image-hover" src="/images/collection-02-hover.png" alt="Collection 02 Poster">
+							<span class="header-font collection-text">COLLECTION 03</span>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <!-- BESTSELLER -->
-        <section>
-            <div class="banner-container best-seller-banner">
-                <video autoplay muted loop>
-                    <source src="videos/bestseller.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="header-font sticky-text">BESTSELLER</div>
-            </div>
-            <div class="description">
-                <span class="description-title">Sed egestas, nibh a condimentum imperdiet</span>
-                <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
-            </div>
-        </section>
+			<!-- Auto Scrolling Text -->
+			<section>
+				<div class="scrolling-text-container">
+					<div class="scrolling-text-wrapper">
+						<span class="scrolling-text-item header-font">NEW ARRIVAL</span>
+						<img class="scrolling-text-item" src="/images/arrow-left.png" alt="arrow left"/>
+						<span class="scrolling-text-item header-font">BEST SELLING</span>
+						<img class="scrolling-text-item arrow-right" src="/images/arrow-left.png" alt="arrow left"/>
+						<span class="scrolling-text-item header-font">NEW ARRIVAL</span>
+						<img class="scrolling-text-item" src="/images/arrow-left.png" alt="arrow left"/>
+						<span class="scrolling-text-item header-font">BEST SELLING</span>
+						<img class="scrolling-text-item arrow-right" src="/images/arrow-left.png" alt="arrow left"/>
+						<span class="scrolling-text-item header-font">NEW ARRIVAL</span>
+						<img class="scrolling-text-item" src="/images/arrow-left.png" alt="arrow left"/>
+						<span class="scrolling-text-item header-font">BEST SELLING</span>
+						<img class="scrolling-text-item arrow-right" src="/images/arrow-left.png" alt="arrow left"/>
+						<span class="scrolling-text-item header-font">NEW ARRIVAL</span>
+						<img class="scrolling-text-item" src="/images/arrow-left.png" alt="arrow left"/>
+						<span class="scrolling-text-item header-font">BEST SELLING</span>
+						<img class="scrolling-text-item arrow-right" src="/images/arrow-left.png" alt="arrow left"/>
+						<span class="scrolling-text-item header-font">NEW ARRIVAL</span>
+						<img class="scrolling-text-item" src="/images/arrow-left.png" alt="arrow left"/>
+						<span class="scrolling-text-item header-font">BEST SELLING</span>
+						<img class="scrolling-text-item arrow-right" src="/images/arrow-left.png" alt="arrow left"/>
+					</div>
+				</div>
+			</section>
 
-        <!-- COLLECTIONS -->
-        <section>
-            <div class="collection-container">
-                <div class="collection collection-video">
-                    <img src="/images/collection-01.png" alt="Collection 01 Poster">
-                    <video muted loop autoplay>
-                        <source src="videos/collection-01.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <span class="header-font collection-text">COLLECTION 01</span>
-                </div>
-                <div class="collection-grid">
-                    <div class="collection collection-image collection-two">
-                        <img class="collection-image-default" src="/images/collection-02.png" alt="Collection 02 Poster">
-                        <img class="collection-image-hover" src="/images/collection-02-hover.png" alt="Collection 02 Poster">
-                        <span class="header-font collection-text">COLLECTION 02</span>
-                    </div>
-                     <div class="collection collection-image collection-three">
-                        <img class="collection-image-default" src="/images/collection-03.png" alt="Collection 02 Poster">
-                        <img class="collection-image-hover" src="/images/collection-02-hover.png" alt="Collection 02 Poster">
-                        <span class="header-font collection-text">COLLECTION 03</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+			<!-- Services -->
+			<section>
+				<div class="service-container max-width-content">
+					<div class="service-wrapper">
+						<span class="service-title">WORLDWIDE SHIPPING</span>
+						<p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+					</div>
+					<div class="service-wrapper">
+						<span class="service-title">CUSTOMER SERVICE</span>
+						<p class="service-description"><u>Lorem ipsum dolor sit amet</u>, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+					</div>
+					<div class="service-wrapper">
+						<span class="service-title">SECURE PAYMENT</span>
+						<p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+					</div>
+				</div>
+			</section>
 
-        <!-- Auto Scrolling Text -->
-        <section>
-            <div class="scrolling-text-container">
-                <div class="scrolling-text-wrapper">
-                    <span class="scrolling-text-item header-font">NEW ARRIVAL</span>
-                    <img class="scrolling-text-item" src="/images/arrow-left.png" alt="arrow left"/>
-                    <span class="scrolling-text-item header-font">BEST SELLING</span>
-                    <img class="scrolling-text-item arrow-right" src="/images/arrow-left.png" alt="arrow left"/>
-                    <span class="scrolling-text-item header-font">NEW ARRIVAL</span>
-                    <img class="scrolling-text-item" src="/images/arrow-left.png" alt="arrow left"/>
-                    <span class="scrolling-text-item header-font">BEST SELLING</span>
-                    <img class="scrolling-text-item arrow-right" src="/images/arrow-left.png" alt="arrow left"/>
-                    <span class="scrolling-text-item header-font">NEW ARRIVAL</span>
-                    <img class="scrolling-text-item" src="/images/arrow-left.png" alt="arrow left"/>
-                    <span class="scrolling-text-item header-font">BEST SELLING</span>
-                    <img class="scrolling-text-item arrow-right" src="/images/arrow-left.png" alt="arrow left"/>
-                    <span class="scrolling-text-item header-font">NEW ARRIVAL</span>
-                    <img class="scrolling-text-item" src="/images/arrow-left.png" alt="arrow left"/>
-                    <span class="scrolling-text-item header-font">BEST SELLING</span>
-                    <img class="scrolling-text-item arrow-right" src="/images/arrow-left.png" alt="arrow left"/>
-                    <span class="scrolling-text-item header-font">NEW ARRIVAL</span>
-                    <img class="scrolling-text-item" src="/images/arrow-left.png" alt="arrow left"/>
-                    <span class="scrolling-text-item header-font">BEST SELLING</span>
-                    <img class="scrolling-text-item arrow-right" src="/images/arrow-left.png" alt="arrow left"/>
-                </div>
-            </div>
-        </section>
+			<!-- FAQ -->
+			<section class="faq-section">
+				<div class="max-width-content">
+					<div class="faq-title header-font">FREQUENTLY ASKED QUESTIONS</div>
+					<p class="faq-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo.</p>
+					<div class="tab-container">
+						<button class="tab-item">ORDERS</button>
+						<button class="tab-item" onclick="handleOnActiveTab(event,'shipping')">SHIPPING</button>
+						<button class="tab-item active" onclick="handleOnActiveTab(event,'returns-and-exchanges')">RETURNS & EXCHANGES</button>
+						<button class="tab-item">SIZING & PRODUCTS</button>
+					</div>
+					<div class="accordion-container">
+						<div id="shipping" class="accordion-wrapper">
+							<div class="accordion-item active">
+								<button class="accordion-question">
+								<span>DO YOU OFFER INTERNATIONAL SHIPPING?</span>
+								<img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+								</button>
+								<div class="accordion-answer">
+									Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+								</div>
+							</div>
+							<div class="accordion-divider"></div>
+							<div class="accordion-item">
+								<button class="accordion-question">
+								<span>HOW LONG DOES DELIVERY TAKE?</span>
+								<img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+								</button>
+								<div class="accordion-answer">
+									Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+								</div>
+							</div>
+							<div class="accordion-divider"></div>
+							<div class="accordion-item">
+								<button class="accordion-question">
+								<span>HOW CAN I TRACK MY ORDER?</span>
+								<img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+								</button>
+								<div class="accordion-answer">
+									Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+								</div>
+							</div>
+						</div>
+						<div id="returns-and-exchanges" class="accordion-wrapper active">
+							<div class="accordion-item active">
+								<button class="accordion-question">
+								<span>WHAT IS YOUR RETURN POLICY?</span>
+								<img class="accordion-arrow" class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+								</button>
+								<div class="accordion-answer">
+									Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+								</div>
+							</div>
+							<div class="accordion-divider"></div>
+							<div class="accordion-item">
+								<button class="accordion-question">
+								<span>CAN I EXCHANGE FOR A DIFFERENT SIZE?</span>
+								<img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+								</button>
+								<div class="accordion-answer">
+									Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+								</div>
+							</div>
+							<div class="accordion-divider"></div>
+							<div class="accordion-item">
+								<button class="accordion-question">
+								<span>ARE SALE ITEMS REFUNDABLE?</span>
+								<img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+								</button>
+								<div class="accordion-answer">
+									Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <!-- Services -->
-        <section>
-            <div class="service-container max-width-content">
-                <div class="service-wrapper">
-                    <span class="service-title">WORLDWIDE SHIPPING</span>
-                    <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
-                </div>
-                 <div class="service-wrapper">
-                    <span class="service-title">CUSTOMER SERVICE</span>
-                    <p class="service-description"><u>Lorem ipsum dolor sit amet</u>, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
-                </div>
-                 <div class="service-wrapper">
-                    <span class="service-title">SECURE PAYMENT</span>
-                    <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <div class="max-width-content">
-                <div class="faq-title header-font">FREQUENTLY ASKED QUESTIONS</div>
-                <p class="faq-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo.</p>
-                <div class="tab-container">
-                    <button class="tab-item">ORDERS</button>
-                    <button class="tab-item" onclick="handleOnActiveTab(event,'shipping')">SHIPPING</button>
-                    <button class="tab-item active" onclick="handleOnActiveTab(event,'returns-and-exchanges')">RETURNS & EXCHANGES</button>
-                    <button class="tab-item">SIZING & PRODUCTS</button>
-                </div>
-                <div class="accordion-container">
-                    <div id="shipping" class="accordion-wrapper">
-                        <div class="accordion-item active">
-                            <button class="accordion-question">
-                                <span>DO YOU OFFER INTERNATIONAL SHIPPING?</span>
-                                <img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
-                            </button>
-                            <div class="accordion-answer">
-                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
-                            </div>
-                        </div>
-                        <div class="accordion-divider"></div>
-                        <div class="accordion-item">
-                            <button class="accordion-question">
-                                <span>HOW LONG DOES DELIVERY TAKE?</span>
-                                <img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
-                            </button>
-                            <div class="accordion-answer">
-                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
-                            </div>
-                        </div>
-                        <div class="accordion-divider"></div>
-                        <div class="accordion-item">
-                            <button class="accordion-question">
-                                <span>HOW CAN I TRACK MY ORDER?</span>
-                                <img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
-                            </button>
-                            <div class="accordion-answer">
-                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
-                            </div>
-                        </div>
-                    </div>
-                    <div id="returns-and-exchanges" class="accordion-wrapper active">
-                        <div class="accordion-item active">
-                            <button class="accordion-question">
-                                <span>WHAT IS YOUR RETURN POLICY?</span>
-                                <img class="accordion-arrow" class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
-                            </button>
-                            <div class="accordion-answer">
-                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
-                            </div>
-                        </div>
-                        <div class="accordion-divider"></div>
-                        <div class="accordion-item">
-                            <button class="accordion-question">
-                                <span>CAN I EXCHANGE FOR A DIFFERENT SIZE?</span>
-                                <img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
-                            </button>
-                            <div class="accordion-answer">
-                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
-                            </div>
-                        </div>
-                        <div class="accordion-divider"></div>
-                        <div class="accordion-item">
-                            <button class="accordion-question">
-                                <span>ARE SALE ITEMS REFUNDABLE?</span>
-                                <img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
-                            </button>
-                            <div class="accordion-answer">
-                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
+            <!-- INQUIRY -->
+			<section class="inquiry-section">
+				<div class="inquiry-container max-width-content">
+					<div>
+						<h4 class="inquiry-title header-font">MAKE AN <br/>INQUIRY</h4>
+						<p class="inquiry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo.</p>
+					</div>
+					<form class="inquiry-form">
+						<div class="inquiry-type-wrapper">
+							<label for="onsite"  class="radio-wrapper">
+							<input type="radio" id="onsite" name="inquiry-type" value="onsite" checked>
+							Onsite
+							</label>
+							<label for="hybrid"  class="radio-wrapper">
+							<input type="radio" id="hybrid" name="inquiry-type" value="hybrid">
+							Hybrid
+							</label>
+						</div>
+						<div class="input-wrapper">
+							<div class="input-item">
+								<input type="text" name="full-name" placeholder=" " autocomplete="off">
+								<label for="full-name" class="inquiry-label">Full name*</label>
+							</div>
+							<div class="input-item">
+								<input type="email" name="email" placeholder=" " autocomplete="off">
+								<label for="email" class="inquiry-label">Email*</label>
+							</div>
+						</div>
+						<div class="input-wrapper">
+							<div class="input-item">
+								<input type="text" name="phone-number" placeholder=" " autocomplete="off">
+								<label for="phone-number" class="inquiry-label">Phone Number*</label>
+							</div>
+							<div class="input-item">
+								<input type="text" name="subject" placeholder=" " autocomplete="off" readonly onclick="onClickSubject()">
+								<label for="subject">Select Subject*</label>
+								<img class="dropdown-arrow" src="/images/chevron-down-grey.svg" alt="dropdown arrow"/>
+								<div class="subject-dropdown">
+									<button class="dropdown-item" onclick="onClickDropdownItem(event)">General inquiry</button>
+									<button class="dropdown-item" onclick="onClickDropdownItem(event)">Job Application</button>
+									<button class="dropdown-item" onclick="onClickDropdownItem(event)">Media & Press</button>
+								</div>
+							</div>
+							<label class="checkbox-wrapper" for="agree-terms-conditions">I agree to all terms & conditions
+							<input type="checkbox" id="agree-terms-conditions" name="agree-terms-conditions" checked>
+							<span class="checkmark"></span>
+							</label>
+						</div>
+						<button type="submit" class="submit-btn">SEND</button>
+					</form>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>
