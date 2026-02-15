@@ -7,11 +7,14 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/faq.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="js/main.js" defer></script>
     <script src="js/auto-scrolling.js" defer></script>
+    <script src="js/tab.js" defer></script>
+    <script src="js/accordion.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -147,6 +150,83 @@
                  <div class="service-wrapper">
                     <span class="service-title">SECURE PAYMENT</span>
                     <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="max-width-content">
+                <div class="faq-title header-font">FREQUENTLY ASKED QUESTIONS</div>
+                <p class="faq-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo.</p>
+                <div class="tab-container">
+                    <button class="tab-item">ORDERS</button>
+                    <button class="tab-item" onclick="handleOnActiveTab(event,'shipping')">SHIPPING</button>
+                    <button class="tab-item active" onclick="handleOnActiveTab(event,'returns-and-exchanges')">RETURNS & EXCHANGES</button>
+                    <button class="tab-item">SIZING & PRODUCTS</button>
+                </div>
+                <div class="accordion-container">
+                    <div id="shipping" class="accordion-wrapper">
+                        <div class="accordion-item active">
+                            <button class="accordion-question">
+                                <span>DO YOU OFFER INTERNATIONAL SHIPPING?</span>
+                                <img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+                            </button>
+                            <div class="accordion-answer">
+                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+                            </div>
+                        </div>
+                        <div class="accordion-divider"></div>
+                        <div class="accordion-item">
+                            <button class="accordion-question">
+                                <span>HOW LONG DOES DELIVERY TAKE?</span>
+                                <img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+                            </button>
+                            <div class="accordion-answer">
+                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+                            </div>
+                        </div>
+                        <div class="accordion-divider"></div>
+                        <div class="accordion-item">
+                            <button class="accordion-question">
+                                <span>HOW CAN I TRACK MY ORDER?</span>
+                                <img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+                            </button>
+                            <div class="accordion-answer">
+                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="returns-and-exchanges" class="accordion-wrapper active">
+                        <div class="accordion-item active">
+                            <button class="accordion-question">
+                                <span>WHAT IS YOUR RETURN POLICY?</span>
+                                <img class="accordion-arrow" class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+                            </button>
+                            <div class="accordion-answer">
+                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+                            </div>
+                        </div>
+                        <div class="accordion-divider"></div>
+                        <div class="accordion-item">
+                            <button class="accordion-question">
+                                <span>CAN I EXCHANGE FOR A DIFFERENT SIZE?</span>
+                                <img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+                            </button>
+                            <div class="accordion-answer">
+                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+                            </div>
+                        </div>
+                        <div class="accordion-divider"></div>
+                        <div class="accordion-item">
+                            <button class="accordion-question">
+                                <span>ARE SALE ITEMS REFUNDABLE?</span>
+                                <img class="accordion-arrow" src="/images/chevron-down.svg" alt="collapse icon"/>
+                            </button>
+                            <div class="accordion-answer">
+                                Items can be returned within 14 days of receipt, provided they are unworn, unwashed, and in original condition with tags attached.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
