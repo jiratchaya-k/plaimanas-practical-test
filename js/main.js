@@ -109,3 +109,10 @@ const collectionSlideInAnim = (parentClass) => {
   collectionImgDefault.style.display = "block";
   collectionImgDefault.style.animation = "slide-in 0.5s ease-in-out";
 };
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
