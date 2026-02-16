@@ -261,13 +261,6 @@
     padding: 0 6px;
     filter: invert(1);
   }
-}
-
-/* Mobile */
-@media screen and (max-width: 768px) {
-  .header {
-    padding: 5px 14px;
-  }
 
   .right-content {
     gap: 0;
@@ -275,6 +268,13 @@
 
   .shopping-bag-btn {
     padding: 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 5px 14px;
   }
 
   .logo {
