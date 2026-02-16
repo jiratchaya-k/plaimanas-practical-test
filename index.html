@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plaimanas Practical Test By Jiratchaya Kongmaung</title>
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/service.css" />
     <link rel="stylesheet" href="css/faq.css" />
     <link rel="stylesheet" href="css/inquiry.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="js/main.js" defer></script>
+    <script src="js/collection.js" defer></script>
     <script src="js/auto-scrolling.js" defer></script>
     <script src="js/tab.js" defer></script>
     <script src="js/accordion.js" defer></script>
@@ -19,7 +22,9 @@
   <body>
     <header class="header">
       <div id="language">
-        <button class="lang-btn">TH - THB <span class="arrow"></span></button>
+        <button class="lang-btn" onclick="onClickLanguageButton()">
+          TH - THB <span class="arrow"></span>
+        </button>
         <div id="lang-option" class="lang-option">
           <button class="lang-select">US - USD</button>
         </div>
@@ -27,17 +32,17 @@
       <div class="menu">
         <a href="#women" class="menu-item menu-btn">WOMEN</a>
         <a href="#collection" class="menu-item menu-btn">COLLECTIONS</a>
-        <a href="#editorial" id="editorial-menu" class="menu-item menu-btn"
-          >EDITORIAL</a
-        >
+        <a href="#editorial" id="editorial-menu" class="menu-item menu-btn">
+          EDITORIAL
+        </a>
         <a href="#news" class="menu-item menu-btn">NEWS</a>
         <a href="#stories" class="menu-item menu-btn">STORIES</a>
       </div>
       <div class="right-content">
         <a href="#sign-in" class="menu-item sign-in-btn">SIGN IN</a>
-        <a href="#cart" class="menu-item"
-          ><img src="/images/shopping-bag.svg" alt="shopping bag"
-        /></a>
+        <a href="#cart" class="menu-item">
+          <img src="/images/shopping-bag.svg" alt="Shopping Bag" />
+        </a>
       </div>
     </header>
     <div class="editorial-dropdown-container">
@@ -51,12 +56,15 @@
         </div>
       </div>
     </div>
+
+    <!-- Logo -->
     <img
       id="logo"
       class="header-font logo"
       src="/images/logo.png"
       alt="Plaimanas Logo"
     />
+
     <main>
       <!-- HERO BANNER -->
       <section class="hero-banner">
@@ -72,9 +80,9 @@
           <div class="header-font sticky-text">NEW</div>
         </div>
         <div class="description">
-          <span class="description-title"
-            >Sed egestas, nibh a condimentum imperdiet</span
-          >
+          <span class="description-title">
+            Sed egestas, nibh a condimentum imperdiet
+          </span>
           <p class="description-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
             nisl non rhoncus commodo, turpis elit ultricies justo, vitae
@@ -93,9 +101,9 @@
           <div class="header-font sticky-text">BESTSELLER</div>
         </div>
         <div class="description">
-          <span class="description-title"
-            >Sed egestas, nibh a condimentum imperdiet</span
-          >
+          <span class="description-title">
+            Sed egestas, nibh a condimentum imperdiet
+          </span>
           <p class="description-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
             nisl non rhoncus commodo, turpis elit ultricies justo, vitae
@@ -107,8 +115,13 @@
       <!-- COLLECTIONS -->
       <section>
         <div class="collection-container">
-          <div class="collection collection-video">
-            <img src="/images/collection-01.png" alt="Collection 01 Poster" />
+          <div
+            id="collection-video"
+            class="collection collection-video"
+            onmouseenter="onHoverColectionVideo(event)"
+            onmouseleave="onLeaveColectionVideo(event)"
+          >
+            <img src="/images/collection-01.png" alt="Collection 01" />
             <video muted loop autoplay>
               <source src="videos/collection-01.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -116,29 +129,39 @@
             <span class="header-font collection-text">COLLECTION 01</span>
           </div>
           <div class="collection-grid">
-            <div class="collection collection-image collection-two">
+            <div
+              id="collection-02"
+              class="collection collection-image"
+              onmouseenter="collectionSlideOutAnim(event)"
+              onmouseleave="collectionSlideInAnim(event)"
+            >
               <img
                 class="collection-image-default"
                 src="/images/collection-02.png"
-                alt="Collection 02 Poster"
+                alt="Collection 02"
               />
               <img
                 class="collection-image-hover"
                 src="/images/collection-02-hover.png"
-                alt="Collection 02 Poster"
+                alt="Collection 02 Hover"
               />
               <span class="header-font collection-text">COLLECTION 02</span>
             </div>
-            <div class="collection collection-image collection-three">
+            <div
+              id="collection-03"
+              class="collection collection-image"
+              onmouseenter="collectionSlideOutAnim(event)"
+              onmouseleave="collectionSlideInAnim(event)"
+            >
               <img
                 class="collection-image-default"
                 src="/images/collection-03.png"
-                alt="Collection 02 Poster"
+                alt="Collection 03"
               />
               <img
                 class="collection-image-hover"
                 src="/images/collection-02-hover.png"
-                alt="Collection 02 Poster"
+                alt="Collection 03 Hover"
               />
               <span class="header-font collection-text">COLLECTION 03</span>
             </div>
@@ -324,7 +347,6 @@
                   <span>WHAT IS YOUR RETURN POLICY?</span>
                   <img
                     class="accordion-arrow"
-                    class="accordion-arrow"
                     src="/images/chevron-down.svg"
                     alt="collapse icon"
                   />
@@ -433,8 +455,8 @@
                   autocomplete="off"
                 />
                 <label for="phone-number" class="inquiry-label"
-                  >Phone Number*</label
-                >
+                  >Phone Number*
+                </label>
               </div>
               <div class="input-item">
                 <input

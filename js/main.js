@@ -1,5 +1,4 @@
-//handle language dropdown
-document.getElementById("language").addEventListener("click", () => {
+const onClickLanguageButton = () => {
   const langOption = document.getElementById("lang-option");
   const langBtn = document.querySelector(".lang-btn");
 
@@ -16,7 +15,7 @@ document.getElementById("language").addEventListener("click", () => {
       langOption.style.opacity = "1";
     }, 100);
   }
-});
+};
 
 document.getElementById("editorial-menu").addEventListener("mouseenter", () => {
   const editorialDropdown = document.querySelector(
@@ -51,64 +50,6 @@ document.addEventListener("scroll", () => {
     document.getElementById("logo").style.width = "100%";
   }
 });
-
-document
-  .querySelector(".collection-video")
-  .addEventListener("mouseenter", () => {
-    const collectionImg = document.querySelector(".collection-video img");
-    collectionImg.style.opacity = "0";
-    setTimeout(() => {
-      collectionImg.style.display = "none";
-    }, 100);
-  });
-
-document
-  .querySelector(".collection-video")
-  .addEventListener("mouseleave", () => {
-    const collectionImg = document.querySelector(".collection-video img");
-    collectionImg.style.display = "block";
-    setTimeout(() => {
-      collectionImg.style.opacity = "1";
-    }, 100);
-  });
-
-document.querySelector(".collection-two").addEventListener("mouseenter", () => {
-  collectionSlideOutAnim(".collection-two");
-});
-
-document.querySelector(".collection-two").addEventListener("mouseleave", () => {
-  collectionSlideInAnim(".collection-two");
-});
-
-document
-  .querySelector(".collection-three")
-  .addEventListener("mouseenter", () => {
-    collectionSlideOutAnim(".collection-three");
-  });
-
-document
-  .querySelector(".collection-three")
-  .addEventListener("mouseleave", () => {
-    collectionSlideInAnim(".collection-three");
-  });
-
-const collectionSlideOutAnim = (parentClass) => {
-  const collectionImgDefault = document.querySelector(
-    `${parentClass} .collection-image-default`,
-  );
-  collectionImgDefault.style.animation = "slide-out 0.5s ease-in-out";
-  setTimeout(() => {
-    collectionImgDefault.style.display = "none";
-  }, 500);
-};
-
-const collectionSlideInAnim = (parentClass) => {
-  const collectionImgDefault = document.querySelector(
-    `${parentClass} .collection-image-default`,
-  );
-  collectionImgDefault.style.display = "block";
-  collectionImgDefault.style.animation = "slide-in 0.5s ease-in-out";
-};
 
 const scrollToTop = () => {
   window.scrollTo({
