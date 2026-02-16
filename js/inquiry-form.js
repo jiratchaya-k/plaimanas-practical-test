@@ -12,7 +12,7 @@ const onClickDropdownItem = (event) => {
   const dropdownArrow = document.querySelector(".dropdown-arrow");
   const subjectInput = document.querySelector("input[name='subject']");
   subjectLabel.classList.add("inquiry-label");
-  subjectInput.value = event.target.textContent;
+  subjectInput.value = event.target.textContent.trim();
   subjectDropdown.classList.remove("open");
   dropdownArrow.classList.remove("open");
 };
