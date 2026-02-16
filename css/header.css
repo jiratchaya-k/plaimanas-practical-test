@@ -27,7 +27,7 @@
 .lang-option {
   position: absolute;
   display: none;
-  margin-top: 13px;
+  top: 100%;
   padding: 10px;
   background-color: #ffffff;
   flex-direction: column;
