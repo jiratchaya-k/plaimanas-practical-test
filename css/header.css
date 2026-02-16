@@ -156,20 +156,8 @@
   transition: width 0.8s ease-in-out;
 }
 
-/* Mobile */
-@media screen and (max-width: 768px) {
-  .header {
-    padding: 5px 14px;
-  }
-
-  .right-content {
-    gap: 0;
-  }
-
-  .shopping-bag-btn {
-    padding: 0;
-  }
-
+/* Tablet */
+@media screen and (max-width: 992px) {
   .menu-desktop {
     display: none;
   }
@@ -272,6 +260,21 @@
     width: 100%;
     padding: 0 6px;
     filter: invert(1);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 5px 14px;
+  }
+
+  .right-content {
+    gap: 0;
+  }
+
+  .shopping-bag-btn {
+    padding: 0;
   }
 
   .logo {

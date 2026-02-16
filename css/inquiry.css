@@ -238,6 +238,16 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .inquiry-section {
+    padding: 100px 22px 103px;
+  }
+  .inquiry-container {
+    gap: 0;
+  }
+}
+
 /* Mobile */
 @media screen and (max-width: 768px) {
   .inquiry-section {
