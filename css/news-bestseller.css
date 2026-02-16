@@ -1,0 +1,55 @@
+.new-banner {
+  width: 556px;
+  height: 572px;
+  background-image: url("/images/bg-new.png");
+}
+
+.best-seller-banner {
+  position: relative;
+  width: 1200px;
+  height: 759px;
+}
+.best-seller-banner video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+}
+
+.sticky-text {
+  position: sticky;
+  top: 40%;
+  font-size: 80px;
+  font-weight: 900;
+  color: #ffffff;
+  height: fit-content;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 715px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0px 34px;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.description:hover {
+  opacity: 0.5;
+}
+
+.description-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.description-content {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}

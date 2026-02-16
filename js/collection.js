@@ -14,7 +14,7 @@ const onLeaveColectionVideo = (event) => {
   }, 100);
 };
 
-const collectionSlideOutAnim = (event) => {
+const onHoverCollectionImage = (event) => {
   const collectionImgDefault = document.querySelector(
     `#${event.target.id} .collection-image-default`,
   );
@@ -25,7 +25,7 @@ const collectionSlideOutAnim = (event) => {
   }, 300);
 };
 
-const collectionSlideInAnim = (event) => {
+const onLeaveCollectionImage = (event) => {
   const collectionImgDefault = document.querySelector(
     `#${event.target.id} .collection-image-default`,
   );
