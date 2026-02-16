@@ -15,6 +15,21 @@ p {
   font-family: "Arial", sans-serif;
 }
 
+video {
+  pointer-events: none;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+video::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
 .header-font {
   font-family: "Hanken Grotesk", sans-serif;
 }
