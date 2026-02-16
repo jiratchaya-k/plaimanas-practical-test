@@ -66,6 +66,7 @@
   flex-direction: column;
   gap: 14px;
   transition: height 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .accordion-question {
@@ -80,6 +81,7 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  gap: 12px;
   cursor: pointer;
 }
 
