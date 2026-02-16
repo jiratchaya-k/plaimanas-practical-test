@@ -204,7 +204,7 @@
     top: 100%;
     left: 0;
     width: 100vw;
-    height: calc(100vh - 45px);
+    height: calc(100dvh - 45px);
     display: none;
     flex-direction: column;
     align-items: center;
