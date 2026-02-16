@@ -6,8 +6,10 @@
 
 .best-seller-banner {
   position: relative;
-  width: 1200px;
-  height: 759px;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 400 / 253;
 }
 .best-seller-banner video {
   position: absolute;
@@ -52,4 +54,38 @@
   font-size: 14px;
   font-weight: 400;
   color: #000000;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .new-banner {
+    width: 282px;
+    height: 285px;
+  }
+
+  .best-seller-banner {
+    max-width: 346px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 346 / 219;
+  }
+
+  .sticky-text {
+    top: 30%;
+    font-size: 40px;
+  }
+
+  .description {
+    max-width: 100%;
+    padding: 0px 22px;
+  }
+
+  .description-title {
+    font-size: 14px;
+  }
+
+  .description-content {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
