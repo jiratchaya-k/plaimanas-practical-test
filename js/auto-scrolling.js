@@ -1,9 +1,10 @@
 document.fonts.ready.then(() => {
   gsap.utils.toArray(".scrolling-text-wrapper").forEach((line) => {
     const items = line.querySelectorAll(".scrolling-text-item");
+    const speed = window.innerWidth <= 768 ? 0.6 : 1;
 
     horizontalLoop(items, {
-      speed: 2,
+      speed,
       repeat: -1,
     });
   });

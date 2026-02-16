@@ -32,3 +32,13 @@
 .scrolling-text-item.arrow-right:last-child {
   padding-left: 95px;
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .scrolling-text-wrapper {
+    gap: 20px;
+  }
+  .scrolling-text-item {
+    font-size: 24px;
+  }
+}
