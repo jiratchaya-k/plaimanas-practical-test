@@ -1,4 +1,6 @@
 const onHoverColectionVideo = (event) => {
+  if (window.innerWidth <= 768) return;
+
   const collectionImg = document.querySelector(`#${event.target.id} img`);
   collectionImg.style.opacity = "0";
   setTimeout(() => {
@@ -7,6 +9,8 @@ const onHoverColectionVideo = (event) => {
 };
 
 const onLeaveColectionVideo = (event) => {
+  if (window.innerWidth <= 768) return;
+
   const collectionImg = document.querySelector(`#${event.target.id} img`);
   collectionImg.style.display = "block";
   setTimeout(() => {
@@ -15,6 +19,8 @@ const onLeaveColectionVideo = (event) => {
 };
 
 const onHoverCollectionImage = (event) => {
+  if (window.innerWidth <= 768) return;
+
   const collectionImgDefault = document.querySelector(
     `#${event.target.id} .collection-image-default`,
   );
@@ -26,6 +32,8 @@ const onHoverCollectionImage = (event) => {
 };
 
 const onLeaveCollectionImage = (event) => {
+  if (window.innerWidth <= 768) return;
+
   const collectionImgDefault = document.querySelector(
     `#${event.target.id} .collection-image-default`,
   );
