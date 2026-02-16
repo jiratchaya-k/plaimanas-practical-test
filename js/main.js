@@ -1,6 +1,3 @@
-$(document).ready(() => {
-  alert(window.screen.width);
-});
 const onClickLanguageButton = () => {
   const langOption = document.getElementById("lang-option");
   const langBtn = document.querySelector(".lang-btn");

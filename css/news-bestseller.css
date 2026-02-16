@@ -56,8 +56,8 @@
   color: #000000;
 }
 
-/* Tablet */
-@media screen and (max-width: 992px) {
+/* Screen XL */
+@media screen and (max-width: 1280px) {
   .best-seller-banner {
     width: 90%;
   }
