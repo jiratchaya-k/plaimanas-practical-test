@@ -57,3 +57,17 @@ const scrollToTop = () => {
     behavior: "smooth",
   });
 };
+
+const onClickMenuMobile = () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const submenuMobile = document.querySelector(".submenu-mobile");
+  menuToggle.classList.toggle("open");
+  submenuMobile.classList.toggle("open");
+};
+
+const onClickEditorialMobile = () => {
+  const editorialMenuMobile = document.querySelector("#editorial-menu-mobile");
+  const editorialSubMenu = document.querySelector(".editorial-submenu");
+  editorialMenuMobile.classList.toggle("open");
+  editorialSubMenu.classList.toggle("open");
+};

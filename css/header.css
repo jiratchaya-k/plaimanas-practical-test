@@ -54,11 +54,14 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.menu {
+.menu-desktop {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
+}
+.menu-mobile {
+  display: none;
 }
 
 .menu-item {
@@ -151,4 +154,123 @@
   z-index: 80;
   mix-blend-mode: difference;
   transition: width 0.8s ease-in-out;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 5px 14px;
+  }
+
+  .right-content {
+    gap: 0;
+  }
+
+  .shopping-bag-btn {
+    padding: 0;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .bar {
+    width: 20px;
+    height: 1px;
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+  }
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(38.66deg) translate(3px, 3px);
+  }
+  .menu-toggle.open .bar:nth-child(2) {
+    transform: rotate(-38.66deg) translate(3px, -4px);
+  }
+
+  .submenu-mobile {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 45px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    background-color: #ffffff;
+  }
+
+  .submenu-mobile.open {
+    display: flex;
+  }
+
+  .submenu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .submenu-content .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .submenu-content .menu-item:hover {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .submenu-content .menu-item.open {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .editorial-submenu {
+    height: 0px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .editorial-submenu.open {
+    height: 141px;
+  }
+
+  .submenu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 6px 0 30px 0;
+  }
+
+  .editorial-submenu .menu-item {
+    padding: 0;
+    opacity: 0;
+  }
+
+  .editorial-submenu.open .menu-item {
+    opacity: 1;
+  }
+
+  .submenu-logo {
+    width: 100%;
+    padding: 0 6px;
+    filter: invert(1);
+  }
 }
