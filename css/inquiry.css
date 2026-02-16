@@ -74,7 +74,7 @@ input[type="radio"]:checked {
   background-color: #000000;
 }
 
-.radio-wrapper label {
+.radio-wrapper span {
   font-size: 14px;
   font-weight: 400;
   color: #000000;
@@ -164,6 +164,7 @@ input:focus {
 
 .dropdown-item {
   width: fit-content;
+  font-size: 14px;
   background: transparent;
   border: none;
   padding: 0;
@@ -179,7 +180,7 @@ input[type="checkbox"] {
 }
 
 .checkbox-wrapper {
-  height: 16px;
+  height: 17px;
   display: flex;
   align-items: center;
   position: relative;
@@ -234,4 +235,25 @@ input[type="checkbox"] {
   background-color: #000000;
   border: none;
   cursor: pointer;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .inquiry-section {
+    padding: 100px 22px 140px;
+  }
+  .inquiry-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .inquiry-title br {
+    display: none;
+  }
+  .inquiry-description {
+    max-width: 100%;
+  }
+  .input-wrapper {
+    grid-template-columns: 1fr;
+  }
 }

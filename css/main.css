@@ -125,4 +125,7 @@ section {
     height: 100vh;
     object-fit: cover;
   }
+  .back-to-top-btn {
+    padding: 10.5px 10px;
+  }
 }
