@@ -42,6 +42,7 @@ document
   });
 
 document.addEventListener("scroll", () => {
+  if (window.innerWidth <= 768) return;
   const scrollYPos = window.scrollY;
 
   if (scrollYPos > 50) {
