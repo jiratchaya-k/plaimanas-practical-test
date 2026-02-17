@@ -232,11 +232,8 @@
 
   .editorial-submenu {
     height: 0px;
+    overflow: hidden;
     transition: all 0.3s ease-in-out;
-  }
-
-  .editorial-submenu.open {
-    height: 141px;
   }
 
   .submenu-wrapper {

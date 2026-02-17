@@ -69,6 +69,15 @@ const onClickMenuMobile = () => {
 const onClickEditorialMobile = () => {
   const editorialMenuMobile = document.querySelector("#editorial-menu-mobile");
   const editorialSubMenu = document.querySelector(".editorial-submenu");
+  const subMenuWrapperHeight =
+    editorialSubMenu.querySelector(".submenu-wrapper").offsetHeight;
+
   editorialMenuMobile.classList.toggle("open");
   editorialSubMenu.classList.toggle("open");
+
+  if (editorialSubMenu.classList.contains("open")) {
+    editorialSubMenu.style.height = `${subMenuWrapperHeight}px`;
+  } else {
+    editorialSubMenu.style.height = "0px";
+  }
 };
