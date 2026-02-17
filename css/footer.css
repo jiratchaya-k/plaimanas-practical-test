@@ -88,7 +88,8 @@
   .footer-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 51px;
+    row-gap: 51px;
+    column-gap: 0px;
   }
   .footer-column.newsletter {
     width: 100%;
