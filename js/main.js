@@ -17,7 +17,7 @@ const onClickLanguageButton = () => {
   }
 };
 
-document.getElementById("editorial-menu").addEventListener("mouseenter", () => {
+$("#editorial-menu").mouseenter(() => {
   const editorialDropdown = document.querySelector(
     ".editorial-dropdown-container",
   );
@@ -28,20 +28,18 @@ document.getElementById("editorial-menu").addEventListener("mouseenter", () => {
   }, 100);
 });
 
-document
-  .getElementById("editorial-dropdown")
-  .addEventListener("mouseleave", () => {
-    const editorialDropdown = document.querySelector(
-      ".editorial-dropdown-container",
-    );
+$("#editorial-dropdown").mouseleave(() => {
+  const editorialDropdown = document.querySelector(
+    ".editorial-dropdown-container",
+  );
 
-    editorialDropdown.style.opacity = "0";
-    setTimeout(() => {
-      editorialDropdown.style.display = "none";
-    }, 100);
-  });
+  editorialDropdown.style.opacity = "0";
+  setTimeout(() => {
+    editorialDropdown.style.display = "none";
+  }, 100);
+});
 
-document.addEventListener("scroll", () => {
+$(document).scroll(() => {
   if (window.innerWidth <= 768) return;
   const scrollYPos = window.scrollY;
 

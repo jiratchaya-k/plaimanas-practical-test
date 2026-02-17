@@ -1,14 +1,12 @@
-const accordionItem = document.getElementsByClassName("accordion-item");
+const accordionItems = document.getElementsByClassName("accordion-item");
 
 $(document).ready(() => {
-  for (let i = 0; i < accordionItem.length; i++) {
-    const currAccordion = accordionItem[i];
+  for (const accordion of accordionItems) {
+    handleAccordionItemHeight(accordion);
 
-    handleAccordionItemHeight(currAccordion);
-
-    $(currAccordion).click(() => {
-      currAccordion.classList.toggle("active");
-      handleAccordionItemHeight(currAccordion);
+    $(accordion).click(() => {
+      accordion.classList.toggle("active");
+      handleAccordionItemHeight(accordion);
     });
   }
 });
