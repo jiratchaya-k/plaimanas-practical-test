@@ -1,6 +1,7 @@
 .inquiry-section {
   position: relative;
-  padding: 100px 0 103px 0;
+  margin: 0;
+  padding-bottom: 103px;
 }
 
 .inquiry-container {
@@ -241,7 +242,7 @@ input[type="checkbox"] {
 /* Tablet */
 @media screen and (max-width: 992px) {
   .inquiry-section {
-    padding: 100px 22px 103px;
+    padding: 0 22px 103px;
   }
   .inquiry-container {
     gap: 0;
@@ -251,7 +252,7 @@ input[type="checkbox"] {
 /* Mobile */
 @media screen and (max-width: 768px) {
   .inquiry-section {
-    padding: 100px 22px 140px;
+    padding: 0 22px 140px;
   }
   .inquiry-container {
     display: flex;

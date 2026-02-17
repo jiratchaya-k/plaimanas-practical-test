@@ -66,17 +66,28 @@ section {
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .hero-banner {
   width: 100%;
+  aspect-ratio: 1440 / 844;
 }
 
-.hero-banner video {
+.hero-banner-video,
+.hero-banner-image {
+  display: none;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+}
+
+.hero-banner[data-type="video"] .hero-banner-video {
+  display: block;
+}
+
+.hero-banner[data-type="image"] .hero-banner-image {
+  display: block;
 }
 
 .banner-container {
@@ -134,11 +145,10 @@ section {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-  .hero-banner video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  .hero-banner {
+    aspect-ratio: 390 / 713;
   }
+
   .back-to-top-btn {
     padding: 10.5px 10px;
   }
