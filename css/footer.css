@@ -99,4 +99,7 @@
   .footer-link-wrapper {
     gap: 18px;
   }
+  .footer-link:hover {
+    opacity: 1;
+  }
 }

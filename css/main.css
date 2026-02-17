@@ -19,6 +19,16 @@ p {
   margin: 0;
 }
 
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent; /* For iOS */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* For Android */
+  outline: none; /* Removes focus outline */
+}
+
 video {
   pointer-events: none;
 }
